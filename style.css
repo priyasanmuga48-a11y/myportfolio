@@ -351,3 +351,6 @@ font-size:16px;
     border-radius: 16px;
     padding: 10px;
 }
+.case-study img {
+    max-width: 100%;
+}
