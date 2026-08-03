@@ -914,4 +914,62 @@ padding:25px;
 @media(max-width:768px){
 
 ...
+}    
+/* ==========================================
+   UGC VIDEO GALLERY
+========================================== */
+
+.ugc-gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.ugc-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid #F7DCE6;
+}
+
+.ugc-card video{
+    width:100%;
+    aspect-ratio:9 / 16;
+    object-fit:contain;
+    background:#000;
+    display:block;
+    border-radius:20px;
+}
+
+.ugc-card h3{
+    padding:15px;
+    text-align:center;
+    color:var(--primary);
+}
+
+
+/* Laptop / Tablet */
+@media(max-width:992px){
+
+    .ugc-gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* Mobile */
+@media(max-width:768px){
+
+    .ugc-gallery{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .ugc-card video{
+        max-height:600px;
+    }
+
 }
