@@ -116,13 +116,23 @@ nav{
 
 .logo{
 
-    font-size:28px;
-
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:24px;
     font-weight:700;
-
     color:var(--primary);
 
-    letter-spacing:2px;
+}
+
+.logo img{
+
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 
 }
 
